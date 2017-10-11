@@ -53,6 +53,8 @@ main( int argc, char * argv[] )
       exit(1);
     }
   strcpy(pgm,argv[1]) ;
+
+  //append .tny if no extention exists
   if (strchr (pgm, '.') == NULL)
      strcat(pgm,".tny");
   source = fopen(pgm,"r");
