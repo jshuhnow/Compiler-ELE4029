@@ -15,8 +15,12 @@
 void printToken( TokenType token, const char* tokenString )
 { switch (token)
   { case IF:
+	  case ELSE:
+	  case WHILE:
+	  case RETURN:
+	  case INT:
+	  case VOID: 
     case THEN:
-    case ELSE:
     case END:
     case REPEAT:
     case UNTIL:
@@ -26,7 +30,7 @@ void printToken( TokenType token, const char* tokenString )
          "reserved word: %s\n",tokenString);
       break;
     case ASSIGN: fprintf(listing,"=\n"); break;
-    case EQ: fprintf(listing,"=\n"); break;
+    case EQ: fprintf(listing,"==\n"); break;
     case NE: fprintf(listing,"!=\n"); break;
     case LT: fprintf(listing,"<\n"); break;
     case LE: fprintf(listing,"<=\n"); break;
@@ -53,6 +57,10 @@ void printToken( TokenType token, const char* tokenString )
       fprintf(listing,
           "ID, name= %s\n",tokenString);
       break;
+	case COMMENT:
+	  fprintf(listing,
+			  "%s\n", tokenString);
+	  break;
     case ERROR:
       fprintf(listing,
           "ERROR: %s\n",tokenString);

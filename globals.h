@@ -31,7 +31,7 @@ typedef enum
     /* reserved words */
     IF,ELSE,WHILE,RETURN,INT,VOID, /* discarded */ THEN,END,REPEAT,UNTIL,READ,WRITE,
     /* multicharacter tokens */
-    ID,NUM,
+    ID,NUM,COMMENT,
     /* special symbols */
     ASSIGN,EQ,NE,LT,LE,GT,GE,PLUS,MINUS,TIMES,OVER,LPAREN,RPAREN,LBRACE,RBRACE,LCURLY,RCURLY,SEMI,COMMA
    } TokenType;
