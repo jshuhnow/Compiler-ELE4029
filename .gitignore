@@ -1,9 +1,10 @@
 # exclude binaries
 *
 !*.*
+!*/
 
 # cscope
-cscope*
+cscope*.*
 
 # objects
 *.o
