@@ -8,7 +8,7 @@ CC = gcc
 
 CFLAGS = -g
 
-OBJS = main.o util.o scan.o parse.o symtab.o analyze.o code.o cgen.o
+OBJS = main.o util.o scan.o #parse.o symtab.o analyze.o code.o cgen.o
 
 all: tiny tm cminus_flex
 tiny: $(OBJS)
