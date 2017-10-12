@@ -10,9 +10,9 @@ CFLAGS = -g
 
 OBJS = main.o util.o scan.o #parse.o symtab.o analyze.o code.o cgen.o
 
-all: tiny tm cminus_flex
-tiny: $(OBJS)
-	$(CC) $(CFLAGS) $(OBJS) -o tiny
+all: cminus tm cminus_flex
+cminus: $(OBJS)
+	$(CC) $(CFLAGS) $(OBJS) -o cminus
 
 main.o: main.c globals.h util.h scan.h parse.h analyze.h cgen.h
 	$(CC) $(CFLAGS) -c main.c
@@ -49,7 +49,7 @@ lex.yy.o: cminus.l scan.h util.h globals.h
 	$(CC) $(CFLAGS) -c lex.yy.c -lfl
 
 clean:
-	-rm tiny
+	-rm cminus
 	-rm tm
 	-rm cminus_flex
 	-rm $(OBJS)
