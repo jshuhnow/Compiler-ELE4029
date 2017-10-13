@@ -19,7 +19,7 @@ This needs [flex](https://www.gnu.org/software/flex/) installed.
 *MAXTOKENLEN* should be bigger than 40(default) to handle longer tokens, especially the comments depending on the input.
 
 ### scan.c
-DFA
+![alt text](DFA.png)
 INLT, INGT, INNE, etc. are not described in the DFA because they can be constructed in similar way of INEQ.
 
 
@@ -59,12 +59,6 @@ g++ 5.4.0 20160609
 
 # Screenshot
 ### sample-cminus.tny
-### Result of the scanner with C code
-![alt text](screenshot_cminus.png)
-### Result of the scanner with flex
-![alt text](screenshot_cminus_flex.png)
-
-
 ```
 /* A program to perform Euclid's
 Algorithm to computer gcd */
@@ -81,4 +75,11 @@ x = input(); y = input();
 output(gcd(x,y));
 }
 ```
+
+
+### Result of the scanner with C code
+![alt text](screenshot_cminus.png)
+### Result of the scanner with flex
+![alt text](screenshot_cminus_flex.png)
+
 
