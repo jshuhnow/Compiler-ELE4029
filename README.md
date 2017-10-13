@@ -24,7 +24,7 @@ INLT, INGT, INNE, etc. are not described in the DFA because they can be construc
 
 
 <h3> cminus.l </h3>
-'/\*' is treated nontrivally manner. *flag* would be 1 after closing '\*' occurs. If the following character is '/', the loop breaks and consume all the characters so far. If not, '/' is consumed as a part of the comment and continue with *flag*=0.
+'/*' is treated nontrivally manner. *flag* would be 1 after closing '*' occurs. If the following character is '/', the loop breaks and consume all the characters so far. If not, '/' is consumed as a part of the comment and continue with *flag*=0.
 
 ```
 "/*"             { char c;
@@ -43,9 +43,10 @@ INLT, INGT, INNE, etc. are not described in the DFA because they can be construc
 
 
 <h1> How to compile and run </h1>
+
 <h3> Requirements </h3>
+
 [flex](https://www.gnu.org/software/flex/)
-[g++](https://gcc.gnu.org/) >=5.4.0
 
 ```
 make
