@@ -102,10 +102,9 @@ DFA
 INLT, INGT, INNE, etc. are not described in the DFA because they can be constructed in similar way of INEQ.
 
 
-
-
 <h3> cminus.l </h3>
 '/\*' is treated nontrivally manner. *flag* would be 1 after closing '\*' occurs. If the following character is '/', the loop breaks and consume all the characters so far. If not, '/' is consumed as a part of the comment and continue with *flag*=0.
+
 ```
 "/*"             { char c;
 					int flag = 0;
@@ -125,18 +124,21 @@ INLT, INGT, INNE, etc. are not described in the DFA because they can be construc
 <h1> How to compile and run </h1>
 <h3> Requirements </h3>
 [flex](https://www.gnu.org/software/flex/)
-[g++](https://gcc.gnu.org/)>=5.4.0
+[g++](https://gcc.gnu.org/)>=5.4.0\
+
 ```
 make
 ./cminus [input file name]
 ./cminus_flex [input file name]
 ```
+
 <h2> Environment </h2>
 Ubuntu 16.04.3 LTS  
 g++ 5.4.0 20160609
 
 <h1> Screenshot </h1>
 <h3> sample-cminus.tny</h3>
+
 ```
 /* A program to perform Euclid's
 Algorithm to computer gcd */
