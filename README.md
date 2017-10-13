@@ -20,85 +20,6 @@ This needs [flex](https://www.gnu.org/software/flex/) installed.
 
 <h3> scan.c </h3>
 DFA
-\documentclass[12pt]{article}
-\usepackage{tikz}
-
-\begin{document}
-
-\begin{center}
-\begin{tikzpicture}[scale=0.2]
-\tikzstyle{every node}+=[inner sep=0pt]
-\draw [black] (13.6,-20.3) circle (3);
-\draw (13.6,-20.3) node {$START$};
-\draw [black] (25.4,-9.2) circle (3);
-\draw (25.4,-9.2) node {$INNUM$};
-\draw [black] (25.4,-17.7) circle (3);
-\draw (25.4,-17.7) node {$INID$}c;
-\draw [black] (24.8,-26.6) circle (3);
-\draw (24.8,-26.6) node {$INEQ$};
-\draw [black] (67.1,-20.3) circle (3);
-\draw (67.1,-20.3) node {$DONE$};
-\draw [black] (67.1,-20.3) circle (2.4);
-\draw [black] (25.4,-38.8) circle (3);
-\draw (25.4,-38.8) node {$INOVER$};
-\draw [black] (37.5,-45.6) circle (3);
-\draw (37.5,-45.6) node {$INCOMMENT$};
-\draw [black] (51.3,-38.8) circle (3);
-\draw (51.3,-38.8) node {$INCOMMENT_$};
-\draw [black] (42.8,-17.7) circle (3);
-\draw (42.8,-17.7) node {$EQ$};
-\draw [black] (15.79,-18.24) -- (23.21,-11.26);
-\fill [black] (23.21,-11.26) -- (22.29,-11.44) -- (22.97,-12.17);
-\draw (21.35,-15.23) node [below] {$0-9$};
-\draw [black] (16.53,-19.65) -- (22.47,-18.35);
-\fill [black] (22.47,-18.35) -- (21.58,-18.03) -- (21.8,-19.01);
-\draw (21.53,-19.76) node [below] {$a-zA-z$};
-\draw [black] (16.21,-21.77) -- (22.19,-25.13);
-\fill [black] (22.19,-25.13) -- (21.73,-24.3) -- (21.24,-25.17);
-\draw (18.14,-23.95) node [below] {$=$};
-\draw [black] (27.49,-25.27) -- (40.11,-19.03);
-\fill [black] (40.11,-19.03) -- (39.17,-18.94) -- (39.62,-19.83);
-\draw (34.85,-22.66) node [below] {$=$};
-\draw [black] (15.21,-22.83) -- (23.79,-36.27);
-\fill [black] (23.79,-36.27) -- (23.78,-35.33) -- (22.93,-35.87);
-\draw (18.88,-30.86) node [left] {$/$};
-\draw [black] (28.02,-40.27) -- (34.88,-44.13);
-\fill [black] (34.88,-44.13) -- (34.43,-43.3) -- (33.94,-44.17);
-\draw (30.45,-42.7) node [below] {$*$};
-\draw [black] (40.19,-44.27) -- (48.61,-40.13);
-\fill [black] (48.61,-40.13) -- (47.67,-40.03) -- (48.11,-40.93);
-\draw (45.39,-42.71) node [below] {$*$};
-\draw [black] (53.25,-36.52) -- (65.15,-22.58);
-\fill [black] (65.15,-22.58) -- (64.25,-22.86) -- (65.01,-23.51);
-\draw (59.75,-30.99) node [right] {$/$};
-\draw [black] (48.3,-38.8) -- (28.4,-38.8);
-\fill [black] (28.4,-38.8) -- (29.2,-39.3) -- (29.2,-38.3);
-\draw (38.35,-38.3) node [above] {$^/$};
-\draw [black] (28.14,-37.58) -- (64.36,-21.52);
-\fill [black] (64.36,-21.52) -- (63.42,-21.38) -- (63.83,-22.3);
-\draw (47.21,-30.06) node [below] {$\lambda$};
-\draw [black] (27.77,-26.16) -- (64.13,-20.74);
-\fill [black] (64.13,-20.74) -- (63.27,-20.37) -- (63.42,-21.35);
-\draw (46.31,-24.04) node [below] {$\lambda$};
-\draw [black] (45.78,-18.02) -- (64.12,-19.98);
-\fill [black] (64.12,-19.98) -- (63.37,-19.4) -- (63.27,-20.39);
-\draw (54.74,-19.58) node [below] {$\lambda$};
-\draw [black] (26.73,-6.524) arc (181.30395:-106.69605:2.25);
-\draw (31.34,-3.71) node [right] {$0-9$};
-\fill [black] (28.33,-8.63) -- (29.14,-9.11) -- (29.12,-8.11);
-\draw [black] (26.822,-15.072) arc (179.31263:-108.68737:2.25);
-\draw (31.5,-12.43) node [right] {$a-zA-z$};
-\fill [black] (28.35,-17.23) -- (29.15,-17.74) -- (29.16,-16.74);
-\draw [black] (28.399,-9.141) arc (89.94619:60.24229:72.927);
-\fill [black] (64.53,-18.76) -- (64.08,-17.93) -- (63.58,-18.79);
-\draw (47.84,-11.03) node [above] {$\lambda$};
-\draw [black] (28.219,-16.676) arc (108.21019:64.65425:48.895);
-\fill [black] (64.43,-18.93) -- (63.92,-18.14) -- (63.49,-19.04);
-\draw (46.62,-13.77) node [above] {$\lambda$};
-\end{tikzpicture}
-\end{center}
-
-\end{document}
 INLT, INGT, INNE, etc. are not described in the DFA because they can be constructed in similar way of INEQ.
 
 
@@ -123,8 +44,8 @@ INLT, INGT, INNE, etc. are not described in the DFA because they can be construc
 
 <h1> How to compile and run </h1>
 <h3> Requirements </h3>
-[flex](https://www.gnu.org/software/flex/)
-[g++](https://gcc.gnu.org/)>=5.4.0\
+[flex] (https://www.gnu.org/software/flex/)
+[g++] (https://gcc.gnu.org/) >=5.4.0
 
 ```
 make
