@@ -81,6 +81,6 @@ output(gcd(x,y));
 ```
 
 <h3> Result of the scanner with C code </h3>
-! [Alt Text] (screenshot_cminus.png)
+![alt text] (./screenshot_cminus.png)
 <h3> Result of the scanner with flex </h3>
-! [Alt Text] (screenshot_cminus_flex.png)
+![alt text] (./screenshot_cminus_flex.png)
