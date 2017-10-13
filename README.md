@@ -11,6 +11,7 @@ lex.yy.o: cminus.l scan.h util.h globals.h
 	flex cminus.l
 	$(CC) $(CFLAGS) -c lex.yy.c -lfl
 ```
+
 This needs [flex](https://www.gnu.org/software/flex/) installed.
 
 <h3> scan.h </h3>
@@ -120,7 +121,6 @@ INLT, INGT, INNE, etc. are not described in the DFA because they can be construc
 ```
 
 
-<h3>
 <h1> How to compile and run </h1>
 <h3> Requirements </h3>
 [flex](https://www.gnu.org/software/flex/)
@@ -152,6 +152,7 @@ x = input(); y = input();
 output(gcd(x,y));
 }
 ```
+
 <h3> Result of the scanner with C code </h3>
 ! [Alt Text] (screenshot_cminus.png)
 <h3> Result of the scanner with flex </h3>
