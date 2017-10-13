@@ -62,6 +62,17 @@ g++ 5.4.0 20160609
 
 <h1> Screenshot </h1>
 <h3> sample-cminus.tny</h3>
+<h3> Result of the scanner with C code </h3>
+
+```
+![alt text] (https://github.com/iriszero/Compiler-ELE4029-/blob/master/screenshot_cminus.png)
+```
+
+<h3> Result of the scanner with flex </h3>
+
+```
+![alt text] (https://github.com/iriszero/Compiler-ELE4029-/blob/master/screenshot_cminus_flex.png)
+```
 
 ```
 /* A program to perform Euclid's
@@ -80,7 +91,3 @@ output(gcd(x,y));
 }
 ```
 
-<h3> Result of the scanner with C code </h3>
-![alt text] (https://github.com/iriszero/Compiler-ELE4029-/blob/master/screenshot_cminus.png)
-<h3> Result of the scanner with flex </h3>
-![alt text] (https://github.com/iriszero/Compiler-ELE4029-/blob/master/screenshot_cminus_flex.png)
