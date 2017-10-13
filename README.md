@@ -44,8 +44,8 @@ INLT, INGT, INNE, etc. are not described in the DFA because they can be construc
 
 <h1> How to compile and run </h1>
 <h3> Requirements </h3>
-[flex] (https://www.gnu.org/software/flex/)
-[g++] (https://gcc.gnu.org/) >=5.4.0
+[flex](https://www.gnu.org/software/flex/)
+[g++](https://gcc.gnu.org/) >=5.4.0
 
 ```
 make
