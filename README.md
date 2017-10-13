@@ -19,7 +19,7 @@ This needs [flex](https://www.gnu.org/software/flex/) installed.
 *MAXTOKENLEN* should be bigger than 40(default) to handle longer tokens, especially the comments depending on the input.
 
 ### scan.c
-![alt text](DFA.png)
+![alt text](DFA.png)  
 INLT, INGT, INNE, etc. are not described in the DFA because they can be constructed in similar way of INEQ.
 
 
