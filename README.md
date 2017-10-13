@@ -63,6 +63,7 @@ g++ 5.4.0 20160609
 <h1> Screenshot </h1>
 <h3> sample-cminus.tny</h3>
 <h3> Result of the scanner with C code </h3>
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
 ![alt text](https://github.com/iriszero/Compiler-ELE4029-/blob/master/screenshot_cminus.png)
 
 <h3> Result of the scanner with flex </h3>
